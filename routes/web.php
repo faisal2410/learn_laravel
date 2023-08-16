@@ -16,6 +16,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+    // return 123;
+});
+
+// Route::get('/laravel-boy', function(){
+//     return 'Laravel boy';
+// });
+
+Route::get('first/{id}',function($id){
+    return $id;
+    // return view('hello');
 });
 
 Route::get('/dashboard', function () {
